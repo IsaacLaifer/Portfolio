@@ -1,3 +1,5 @@
+//FLAT SCREEN SCRIPT
+
 function onReady() {
 
 let intro = document.querySelector('.intro');
@@ -33,3 +35,10 @@ if (document.readyState !== "loading") {
 } else {
     document.addEventListener("DOMContentLoaded", onReady);
 }
+
+// NAVBAR SCRIPT
+
+const hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click', function(){
+    this.classList.toggle('is-active');
+});
