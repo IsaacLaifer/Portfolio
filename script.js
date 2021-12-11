@@ -25,6 +25,7 @@ let logoSpan = document.querySelectorAll('.logo');
         },2300)
 
     })
+    
 }
 
 if (document.readyState !== "loading") {
