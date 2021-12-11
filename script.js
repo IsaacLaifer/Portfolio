@@ -25,7 +25,6 @@ let logoSpan = document.querySelectorAll('.logo');
         setTimeout(()=>{
             intro.style.top = '-100vh';
         },2300)
-
     })
     
 }
