@@ -1,3 +1,5 @@
+//FLAT SCREEN SCRIPT
+
 function onReady() {
 
 let intro = document.querySelector('.intro');
@@ -11,6 +13,19 @@ let logoSpan = document.querySelectorAll('.logo');
             }, (idx + 1)*400)
         });
 
+        setTimeout(()=>{
+            logoSpan.forEach((span, idx)=>{
+                setTimeout(()=>{
+                    span.classList.remove('active');
+                    span.classList.add('fade');
+                }, (idx + 1)*50)
+            })
+        },2000);
+
+        setTimeout(()=>{
+            intro.style.top = '-100vh';
+        },2300)
+
     })
 }
 
@@ -19,3 +34,10 @@ if (document.readyState !== "loading") {
 } else {
     document.addEventListener("DOMContentLoaded", onReady);
 }
+
+// NAVBAR SCRIPT
+
+const hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click', function(){
+    this.classList.toggle('is-active');
+});
