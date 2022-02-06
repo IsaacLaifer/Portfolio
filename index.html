@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./images/logohtml.png">
+    <link rel="stylesheet" href="./css/lightbox.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Isaac Laifer</title>
@@ -83,6 +85,20 @@
         <div class="timeline-container">
             <ul>
                 <li>
+                    <h3 class="timeline-title">BAC STI2D</h3>
+                    <p>Mention assez bien</p>
+                    <!-- <a href="">Lire plus</a> -->
+                    <span class="timeline-circle"></span>
+                    <span class="timeline-date">2018-2020</span>
+                </li>
+                <li>
+                    <h3 class="timeline-title">BTS SIO SLAM</h3>
+                    <p>BTS SIO avec une première année en initial et une deuxième en alternance</p>
+                    <!-- <a href="">Lire plus</a> -->
+                    <span class="timeline-circle"></span>
+                    <span class="timeline-date">2020-2022</span>
+                </li>
+                <!-- <li>
                     <h3 class="timeline-title">Etape 1</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore illum nesciunt!</p>
                     <a href="">Lire plus</a>
@@ -95,24 +111,37 @@
                     <a href="">Lire plus</a>
                     <span class="timeline-circle"></span>
                     <span class="timeline-date">1 Janvier 2022</span>
-                </li>
-                <li>
-                    <h3 class="timeline-title">Etape 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore illum nesciunt!</p>
-                    <a href="">Lire plus</a>
-                    <span class="timeline-circle"></span>
-                    <span class="timeline-date">1 Janvier 2022</span>
-                </li>
-                <li>
-                    <h3 class="timeline-title">Etape 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore illum nesciunt!</p>
-                    <a href="">Lire plus</a>
-                    <span class="timeline-circle"></span>
-                    <span class="timeline-date">1 Janvier 2022</span>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
+
+    <section id="project-wrapper">
+        <div class="project-heading">
+            <span>Let's see my work</span>
+            <h3>My Projects</h3>
+        </div>
+        <ul class="project-filter">
+            <li class="list project-filter-active" data-filter="all">Tout</li>
+            <li class="list" data-filter="scolaire">Scolaire</li>
+            <li class="list" data-filter="personnel">Personnel</li>
+        </ul>
+
+        <div class="project-container">
+            <a href="./images/logohtml.png" class="project-box scolaire" data-lightbox="work">
+                <img src="./images/logohtml.png" alt="work">
+            </a>
+            <a href="./images/logohtml.png" class="project-box scolaire" data-lightbox="work">
+                <img src="./images/logohtml.png" alt="work">
+            </a>
+            <a href="./images/logohtml.png" class="project-box personnel" data-lightbox="work">
+                <img src="./images/logohtml.png" alt="work">
+            </a>
+            <a href="./images/logohtml.png" class="project-box personnel" data-lightbox="work">
+                <img src="./images/logohtml.png" alt="work">
+            </a>
+        </div>
+    </section>
 
     <section class="skill-wrapper" id="about">
         <header>Compétences</header>
@@ -188,5 +217,26 @@
         </div>
     </section>
     <script src="script.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/lightbox.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).on('click','.project-filter li', function(){
+            $(this).addClass('project-filter-active').siblings().removeClass('project-filter-active')
+        });
+
+        $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if(value =='all'){
+                    $('.project-box').show('1000');
+                }else{
+                    $('.project-box').not('.'+value).hide('1000');
+                    $('.project-box').filter('.'+value).show('1000');
+                }
+            });
+        })
+    </script>
 </body>
 </html>
