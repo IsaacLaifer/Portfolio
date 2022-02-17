@@ -817,7 +817,29 @@ section .skill{
 .popup-box .popup-footer .btnP:focus{
    outline: none;
 }
+.post-slider {
+    position: relative;
+}
 
+.post-slider .next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color: #2980B9;
+    cursor: pointer;
+  }
+  
+  .post-slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: #2980B9;
+    cursor: pointer;
+  }
+  
+ 
 
 /*responsive*/
 
