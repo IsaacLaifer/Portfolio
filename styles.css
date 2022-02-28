@@ -11,7 +11,9 @@
     box-sizing: border-box;
     font-family: 'Readex Pro', sans-serif;
 }
-
+a{
+    text-decoration: none;
+}
 header{
     position: relative;
     left: 0;
@@ -314,6 +316,14 @@ nav{
     border-color: var(--primary);
     transition: all 0.5 ease-in-out;
 }
+.btnCv{
+    color: #fff;
+}
+.btnCv:hover{
+    background: transparent;
+    border-color: var(--primary);
+    color: #000; 
+}
 .btn.btn-red:hover{
     background: transparent;
     border-color: var(--primary);
@@ -321,6 +331,12 @@ nav{
 }
 .btn.btn-gray{
     transition: all 0.5s ease-in-out;
+}
+.btnProjet{
+    color: #000;
+}
+.btnProjet:hover{
+    color: #fff;
 }
 .btn.btn-gray:hover{
     background: var(--primary);
