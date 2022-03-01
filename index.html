@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="shortcut icon" href="./images/logohtml.png">
     <link rel="stylesheet" href="./css/lightbox.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Isaac Laifer</title>
 </head>
+
 <body>
 
     <div class="intro">
@@ -23,28 +26,26 @@
 
     <header>
         <nav>
-           <div class="container">
-            <h1 class="navH1">Isaac Laifer</h1>
-            <div class="menu">
-                <a href="#" class="is-active">Accueil</a>
-                <a href="#about">A propos</a>
-                <a href="#">Projets</a>
-                <a href="#">Contact</a>
-            </div>
+            <div class="container">
+                <h1 class="navH1">Isaac Laifer</h1>
+                <div class="menu">
+                    <a href="#" class="is-active">Accueil</a>
+                    <a href="#project-wrapper">Projets</a>
+                    <a href="#about">A propos</a>
+                </div>
 
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-           </div>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
     </header>
     <nav class="mobile-nav">
         <a href="#" class="is-active">Accueil</a>
+        <a href="#project-wrapper">Projets</a>
         <a href="#about">A propos</a>
-        <a href="#">Projets</a>
-        <a href="#">Contact</a>
     </nav>
 
     <div class="about-wrapper">
@@ -70,12 +71,12 @@
             <h1>Bonjour<span>!</span></h1>
             <h2>Voici qui je suis et ce que je fais</h2>
             <div class="about-btns">
-                <button type="button" class="btn btn-red">CV</button>
-                <button type="button" class="btn btn-gray">Projets</button>
+                <a href="./CV IsaacLaifer 2022.pdf" class="btnCv" target="_blank"><button type="button" class="btn btn-red">CV</button></a>
+                <a href="#project-wrapper" class="btnProjet"><button type="button" class="btn btn-gray">Projets</button></a>
             </div>
             <div class="about-para">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officia rerum ab autem adipisci magnam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, laudantium minus fugit perspiciatis reiciendis ratione.</p>
+                <p>Etudiant de 20 ans en deuxième année de BTS SIO option SLAM</p>
+                <p>Passioné de programmation en passant de site internet à des bots discord</p>
             </div>
         </div>
     </div>
@@ -92,26 +93,25 @@
                     <span class="timeline-date">2018-2020</span>
                 </li>
                 <li>
-                    <h3 class="timeline-title">BTS SIO SLAM</h3>
-                    <p>BTS SIO avec une première année en initial et une deuxième en alternance</p>
-                    <!-- <a href="">Lire plus</a> -->
-                    <span class="timeline-circle"></span>
-                    <span class="timeline-date">2020-2022</span>
-                </li>
-                <!-- <li>
-                    <h3 class="timeline-title">Etape 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore illum nesciunt!</p>
+                    <h3 class="timeline-title">BTS SIO SLAM 1ère année</h3>
+                    <p>Réalisation d'un stage chez HIGHTECHM</p>
                     <a href="">Lire plus</a>
                     <span class="timeline-circle"></span>
-                    <span class="timeline-date">1 Janvier 2022</span>
+                    <span class="timeline-date">2020-2021</span>
+                </li>
+                 <li>
+                    <h3 class="timeline-title">BTS SIO SLAM 2ème année</h3>
+                    <p>Alternance réalisé au sein de l'entreprise VisionPROLAB</p>
+                    <a href="">Lire plus</a>
+                    <span class="timeline-circle"></span>
+                    <span class="timeline-date">2021-2022</span>
                 </li>
                 <li>
-                    <h3 class="timeline-title">Etape 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore illum nesciunt!</p>
-                    <a href="">Lire plus</a>
+                    <h3 class="timeline-title">Mon futur</h3>
+                    <p>Bachelor CSI + Master MS2D</p>
                     <span class="timeline-circle"></span>
-                    <span class="timeline-date">1 Janvier 2022</span>
-                </li> -->
+                    <span class="timeline-date">2022-2025</span>
+                </li>
             </ul>
         </div>
     </div>
@@ -124,168 +124,265 @@
         <ul class="project-filter">
             <li class="list project-filter-active" data-filter="all">Tout</li>
             <li class="list" data-filter="scolaire">Scolaire</li>
+            <li class="list" data-filter="entreprise">Entreprise</li>
             <li class="list" data-filter="personnel">Personnel</li>
+            
         </ul>
 
         <div class="project-container">
             <a class="project-box scolaire">
-                <img src="./images/logohtml.png" alt="work">
+                <img src="./images/lafleurAccueil.PNG" alt="work">
 
-                   <section class="services">
-        <div class="containerP">
-           <div class="row">
+                <section class="services">
+                    <div class="containerP">
+                        <div class="row">
 
-           </div>
-           <div class="row">
-              <div class="service-items">
-                  <div class="row">
-                     <!-- item start -->
-                     <div class="item">
-                        <div class="item-inner">
-                           <h3>Web Design</h3>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                           <div class="read-more-cont">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                              <img src="./images/bootstrap-logo.png" alt="img">
-                              <img src="./images/loading.gif" alt="img">
-                           </div>
-                           <button class="btn" type="button">Read More</button>
                         </div>
-                     </div>
-                  </div>
-              </div>
-           </div>
-        </div>
-    </section> 
-</a>
+                        <div class="row">
+                            <div class="service-items">
+                                <div class="row">
+                                    <!-- item start -->
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <h3>LaFleur</h3>
+                                            <p>Projet PHP / Bootstrap de 1ère année du BTS SIO</p>
+                                            <div class="read-more-cont">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <img src="./images/bootstrap-logo.png" alt="img">
+                                                <img src="./images/loading.gif" alt="img">
+                                            </div>
+                                            <button class="btn" type="button">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </a>
             <a class="project-box scolaire">
-                <img src="./images/logohtml.png" alt="work">
+                <img src="./images/symfonyAccueil.PNG" alt="work">
                 <section class="services">
                     <div class="containerP">
-                       <div class="row">
-            
-                       </div>
-                       <div class="row">
-                          <div class="service-items">
-                              <div class="row">
-                                 <!-- item start -->
-                                 <div class="item">
-                                    <div class="item-inner">
-                                       <h3>Web Design</h3>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                       <div class="read-more-cont">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <img src="./images/bootstrap-logo.png" alt="img">
-                                          <img src="./images/loading.gif" alt="img">
-                                       </div>
-                                       <button class="btn" type="button">Read More</button>
+                        <div class="row">
+
+                        </div>
+                        <div class="row">
+                            <div class="service-items">
+                                <div class="row">
+                                    <!-- item start -->
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <h3>Projet GSB - Symfony</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
+                                            <div class="read-more-cont">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <img src="./images/bootstrap-logo.png" alt="img">
+                                                <img src="./images/loading.gif" alt="img">
+                                            </div>
+                                            <button class="btn" type="button">Read More</button>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                          </div>
-                       </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section> 
+                </section>
             </a>
-            <a class="project-box personnel">
-                <img src="./images/logohtml.png" alt="work">
+            <a class="project-box scolaire">
+                <img src="./images/javaAccueil.PNG" alt="work">
                 <section class="services">
                     <div class="containerP">
-                       <div class="row">
-            
-                       </div>
-                       <div class="row">
-                          <div class="service-items">
-                              <div class="row">
-                                 <!-- item start -->
-                                 <div class="item">
-                                    <div class="item-inner">
-                                       <h3>Web Design</h3>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                       <div class="read-more-cont">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <img src="./images/bootstrap-logo.png" alt="img">
-                                          <img src="./images/loading.gif" alt="img">
-                                       </div>
-                                       <button class="btn" type="button">Read More</button>
+                        <div class="row">
+
+                        </div>
+                        <div class="row">
+                            <div class="service-items">
+                                <div class="row">
+                                    <!-- item start -->
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <h3>Projet GSB - Java</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
+                                            <div class="read-more-cont">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <img src="./images/bootstrap-logo.png" alt="img">
+                                                <img src="./images/loading.gif" alt="img">
+                                            </div>
+                                            <button class="btn" type="button">Read More</button>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                          </div>
-                       </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section> 
+                </section>
             </a>
-            <a  class="project-box personnel">
-                <img src="./images/logohtml.png" alt="work">
+            <a class="project-box scolaire">
+                <img src="./images/ratpDiscordLogo.png" alt="work">
                 <section class="services">
                     <div class="containerP">
-                       <div class="row">
-            
-                       </div>
-                       <div class="row">
-                          <div class="service-items">
-                              <div class="row">
-                                 <!-- item start -->
-                                 <div class="item">
-                                    <div class="item-inner">
-                                       <h3>Web Design</h3>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                       <div class="read-more-cont">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                          <img src="./images/bootstrap-logo.png" alt="img">
-                                          <img src="./images/loading.gif" alt="img">
-                                       </div>
-                                       <button class="btn" type="button">Read More</button>
+                        <div class="row">
+
+                        </div>
+                        <div class="row">
+                            <div class="service-items">
+                                <div class="row">
+                                    <!-- item start -->
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <h3>Bot Discord RATP</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
+                                            <div class="read-more-cont">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                    eiusm.</p>
+                                                <img src="./images/bootstrap-logo.png" alt="img">
+                                                <img src="./images/loading.gif" alt="img">
+                                            </div>
+                                            <button class="btn" type="button">Read More</button>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                          </div>
-                       </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section> 
+                </section>
+            </a>
+            <a class="project-box entreprise">
+                <img src="./images/stageAccueil.PNG" alt="work">
+                <section class="services">
+                    <div class="containerP">
+                        <div class="row">
+
+                        </div>
+                        <div class="row">
+                            <div class="service-items">
+                                <div class="row">
+                                    <!-- item start -->
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <h3>HIGHTECHM</h3>
+                                            <p>Création site web durant le stage de 1ère année</p>
+                                            <div class="read-more-cont">
+                                                <p>HIGHTECHM, société par actions simplifiée, immatriculée sous le SIREN 829166123, est en activité depuis 4 ans</p>
+                                                <p>Localisée à BOULOGNE-BILLANCOURT (92100), elle est spécialisée dans le secteur d'activité du conseil en systèmes et logiciels informatiques.</p>
+                                                <p>Son effectif est compris entre 1 et 2 salariés.</p>
+                                                <p>Sur l'année 2019 elle réalise un chiffre d'affaires de 119 000,00 €. Le total du bilan a augmenté de 16,38 % entre 2018 et 2019</p>
+                                                <p> Michael ZARKA est président de la société HIGHTECHM.</p>
+
+                                                <p>Mission principale :</p>
+                                                
+                                                <p><b>-Création du site WEB</b></p>
+                                                <img src="./images/stage1.PNG" alt="img">
+                                                <img src="./images/stage3.PNG" alt="img">
+                                                <img src="./images/stage4.PNG" alt="img">
+                                                <img src="./images/stage2.PNG" alt="img">
+                                            </div>
+                                            <button class="btn" type="button">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </a>
         </div>
     </section>
 
-     <div class="popup-box">
+    <div class="popup-box">
         <div class="popup-content">
             <div class="popup-header">
-               <h3></h3>
-               <span class="popup-close-icon">&times;</span>
+                <h3></h3>
+                <span class="popup-close-icon">&times;</span>
             </div>
             <div class="popup-body">
-              
+
             </div>
             <div class="popup-footer">
-              <button class="btn popup-close-btn">Close</button>
+                <button class="btn popup-close-btn">Close</button>
             </div>
         </div>
-     </div>
+    </div>
 
     <section class="skill-wrapper" id="about">
         <header>Compétences</header>
@@ -356,31 +453,52 @@
                     <i class="fab fa-react"></i>
                 </div>
             </div>
-
-
         </div>
     </section>
+
+
+    <div class="post-slider">
+        <i class="fas fa-chevron-left prev"></i>
+        <i class="fas fa-chevron-right next"></i>
+  
+    
+  
+        <div class="post-wrapper">
+
+            <div class="post"><h1>1</h1></div>
+            <div class="test"><h1>1</h1></div>
+            <div class="test"><h1>1</h1></div>
+            <div class="test"><h1>1</h1></div>
+            <div class="test"><h1>1</h1></div>
+ 
+    
+          </div>
+        </div>
+
     <script src="script.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/lightbox.js"></script>
-
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
 
-        $(document).on('click','.project-filter li', function(){
+        $(document).on('click', '.project-filter li', function () {
             $(this).addClass('project-filter-active').siblings().removeClass('project-filter-active')
         });
 
-        $(document).ready(function(){
-            $('.list').click(function(){
+        $(document).ready(function () {
+            $('.list').click(function () {
                 const value = $(this).attr('data-filter');
-                if(value =='all'){
+                if (value == 'all') {
                     $('.project-box').show('1000');
-                }else{
-                    $('.project-box').not('.'+value).hide('1000');
-                    $('.project-box').filter('.'+value).show('1000');
+                } else {
+                    $('.project-box').not('.' + value).hide('1000');
+                    $('.project-box').filter('.' + value).show('1000');
                 }
             });
         })
     </script>
+
 </body>
+
 </html>
