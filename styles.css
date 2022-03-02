@@ -772,7 +772,7 @@ section .skill{
 }
 .popup-box .popup-content{
    background-color: #ffffff;
-   width: 600px;
+   width: 700px;
    position: absolute;
    left: 50%;
    top:50%;
@@ -803,7 +803,7 @@ section .skill{
 }
 .popup-box .popup-body{
    padding: 15px;
-   max-height: 300px;
+   max-height: 425px;
    overflow-y: auto;
 }
 .popup-box .popup-body img{
