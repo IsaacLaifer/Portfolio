@@ -85,7 +85,7 @@ function onReady() {
   const popup = document.querySelector(".popup-box")
   const popupCloseBtn = popup.querySelector(".popup-close-btn");
   const popupCloseIcon = popup.querySelector(".popup-close-icon");
-  for(let i=0;i<5;i++){
+  for(let i=0;i<6;i++){
   serviceItems[i].addEventListener("click",function(event){
     console.log("ok")
     if(event.target.tagName.toLowerCase() == "button"){
