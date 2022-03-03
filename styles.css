@@ -14,6 +14,14 @@
 a{
     text-decoration: none;
 }
+.redIcon{
+    color: var(--primary);
+}
+.divCenter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
 header{
     position: relative;
     left: 0;
